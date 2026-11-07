@@ -1,5 +1,9 @@
 # Spelen op je telefoon
 
+**De site is gepubliceerd: https://mirandusen2-code.github.io/freekickbattle/**
+
+GitHub bevestigt een geslaagde Pages-deployment. De onderstaande instelstappen zijn alleen nodig bij opnieuw instellen; voor spelen hoef je niets aan te zetten.
+
 De map `site/` is de geteste mobiele webversie. Zij bevat het hele spel, een webappmanifest, appiconen en een serviceworker voor offline spelen na het eerste bezoek. Er is geen backend of download van de originele referentievideo nodig.
 
 Publicatie gebruikt de aparte branch `gh-pages`, met alleen de bestanden uit `site/`. De broncode blijft op `main`.

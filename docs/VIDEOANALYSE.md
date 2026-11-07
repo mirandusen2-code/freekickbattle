@@ -86,4 +86,4 @@ De actuele resultaten staan in `data/validation.json`, met logboeken in `test-re
 | Geluid en opening | Eigen gesynthetiseerde effecten; originele muziek, volledige logo-/laad-/dialoogcyclus niet nagemaakt |
 | Lettertype en overlays | Gedocumenteerde bronuitsneden plus HTML/CSS; niet ieder gegenereerd woord heeft het oorspronkelijke lettertype |
 
-Deze versie is een speelbare, op de daadwerkelijk ontvangen opname afgestemde reconstructie. ‘Alles exact frame voor frame’ is niet bewezen en wordt niet als voltooid voorgesteld. Er is niets gepubliceerd of gepusht.
+Deze versie is een speelbare, op de daadwerkelijk ontvangen opname afgestemde reconstructie. ‘Alles exact frame voor frame’ is niet bewezen en wordt niet als voltooid voorgesteld. De eerste oplevering was lokaal. Na expliciete aanvullende toestemming is de mobiele webversie gepubliceerd op https://mirandusen2-code.github.io/freekickbattle/. GitHub bevestigt een geslaagde publicatie.

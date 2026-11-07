@@ -1,5 +1,9 @@
 # Freekick Battle — reconstructie op basis van de ontvangen video
 
+**[Speel op je telefoon of computer](https://mirandusen2-code.github.io/freekickbattle/)**
+
+Open de link in Safari of Chrome, draai je telefoon voor een groter speelveld en kies START → TRAINING → 1. Op iPhone kun je via Deel → Zet op beginscherm een appicoon toevoegen. De mobiele versie is met aanrakingen en offline herladen getest. GitHub heeft de Pages-publicatie bevestigd.
+
 De standaardpagina is nu de speelbare 3D-reconstructie van de Training-opname. De 13 ZIP-delen zijn volledig samengevoegd en hun gezamenlijke SHA-256 klopt met het aangeleverde manifest. Alle **26.975 frames** zijn technisch geïndexeerd. Overzichtsplaten over de hele video, dichte schotreeksen en native detailbeelden zijn visueel onderzocht.
 
 **Dit is geen pixelidentieke kopie.** De interface gebruikt gedocumenteerde uitsneden uit de aangeleverde video; de 3D-modellen, balphysics, poses, camera en geluiden zijn zelfstandig gemaakt. De opname opent de oorspronkelijke shop niet. Extra ontwerpen, prijzen, sommige bonusregels en Arcade/Match-details zijn eigen keuzes. Online PvP ontbreekt. Zie [het volledige analyse- en afwijkingenverslag](docs/VIDEOANALYSE.md).
@@ -74,4 +78,4 @@ De database bevat 26.975 technische framerecords, 19 expliciete visuele controle
 - `data/references.sqlite`, `reference-index.json`, `validation.json`: database, export en daadwerkelijke laatste validatie.
 - `scripts/reassemble-video.py`, `index-reference-video.py`, `extract-reference-assets.py`, `generate-video-analysis.py`: reproduceerbare bronverwerking.
 
-Oudere verslagen zoals `TOEGANGSRESULTATEN.md` beschrijven eerdere pogingen vóór de succesvolle ZIP-aanlevering. Hun toenmalige conclusie ‘video niet bekeken’ geldt niet voor deze versie. Er is niets gepubliceerd of gepusht.
+Oudere verslagen zoals `TOEGANGSRESULTATEN.md` beschrijven eerdere pogingen vóór de succesvolle ZIP-aanlevering. Hun toenmalige conclusie ‘video niet bekeken’ geldt niet voor deze versie. Na expliciete toestemming is de mobiele webversie op GitHub Pages gepubliceerd. De publicatiebranch is `gh-pages`; de broncode staat op `main`.

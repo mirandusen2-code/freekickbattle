@@ -1,0 +1,46 @@
+name: Check phone startup and Safari gameplay
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'site/**'
+      - 'tests/mobile-site-browser.mjs'
+      - 'tests/wait-for-mobile-release.mjs'
+      - '.github/workflows/mobile-browser-check.yml'
+permissions:
+  contents: read
+jobs:
+  mobile:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    strategy:
+      fail-fast: false
+      matrix:
+        browser: [chromium, webkit]
+    env:
+      TEST_BROWSER: ${{ matrix.browser }}
+      LIBGL_ALWAYS_SOFTWARE: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+      - run: npx playwright install --with-deps ${{ matrix.browser }}
+      - name: Check local phone build
+        run: node tests/mobile-site-browser.mjs
+      - name: Wait for this release on Pages
+        run: node tests/wait-for-mobile-release.mjs
+      - name: Check published phone game
+        env:
+          TEST_PUBLIC_URL: https://mirandusen2-code.github.io/freekickbattle/
+        run: |
+          export TEST_RELEASE="$(node -p 'JSON.parse(require("fs").readFileSync("site/release.json","utf8")).id')"
+          node tests/mobile-site-browser.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: mobile-${{ matrix.browser }}
+          path: test-results/mobile-site/

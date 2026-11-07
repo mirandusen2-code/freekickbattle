@@ -1,0 +1,17 @@
+{
+  "release": "freekick-f71c3cbdeefb904f",
+  "reportedIssue": "Blank or black screen in Safari on an iPhone; exact device-side cause not yet confirmed.",
+  "changes": [
+    "Classic ES2018 game script instead of inline ES module",
+    "Visible startup, parse-error and timeout feedback with retry",
+    "Viewport and layout fallbacks for older Safari",
+    "Cache writes cannot block a successful navigation response"
+  ],
+  "localChecks": {
+    "startupErrorAndMissingCode": "passed",
+    "phoneTouchOnlineOffline": "passed",
+    "standaloneGame": "passed"
+  },
+  "safariEngineCheck": "queued after push",
+  "recordedAt": "2026-11-07T19:10:14.951245+00:00"
+}

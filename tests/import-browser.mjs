@@ -1,0 +1,40 @@
+import { chromium } from 'playwright';
+import assert from 'node:assert/strict';
+import { mkdir, open, rm, readFile } from 'node:fs/promises';
+import { execFileSync } from 'node:child_process';
+
+await mkdir('test-results/import', { recursive: true });
+const path = 'test-results/import/fixture-large.mp4';
+execFileSync('ffmpeg', ['-v', 'error', '-f', 'lavfi', '-i', 'testsrc2=size=160x90:rate=30:duration=1', '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-y', path]);
+const file = await open(path, 'r+'); const size = (await file.stat()).size; const padding = 36 * 1024 * 1024;
+const box = Buffer.alloc(8); box.writeUInt32BE(padding + 8); box.write('free', 4); await file.write(box, 0, 8, size); await file.truncate(size + padding + 8); await file.close();
+const browser = await chromium.launch({ executablePath: process.env.CHROMIUM_PATH || '/usr/bin/chromium', headless: true, args: ['--no-sandbox'] });
+let id; const errors = [];
+try {
+  const page = await browser.newPage({ viewport: { width: 1400, height: 1000 } }); page.on('pageerror', e => errors.push(e.message));
+  await page.route('**/api/video-import', async route => { if (route.request().method() === 'POST') { const body = route.request().postDataJSON(); await route.continue({ postData: JSON.stringify({ ...body, kind: 'fixture' }) }); } else await route.continue(); });
+  await page.goto(`${process.env.TEST_URL || 'http://127.0.0.1:5173'}/analyze.html`);
+  await page.waitForFunction(() => document.querySelector('#service-status').textContent.includes('actief'));
+  await page.locator('#video-file').setInputFiles(path);
+  await page.waitForFunction(() => document.querySelector('#video-preview').videoWidth === 160);
+  assert.match(await page.locator('#file-detail').textContent(), /36\.0 MiB/);
+  const created = page.waitForResponse(r => r.url().endsWith('/api/video-import') && r.status() === 201);
+  await page.locator('#upload-button').click(); id = (await (await created).json()).id;
+  await page.waitForFunction(() => document.querySelector('#upload-status').textContent.includes('Volledig opgeslagen'), null, { timeout: 60000 });
+  await page.waitForFunction(() => !document.querySelector('#frame-viewer').hidden && !document.querySelector('#segment-button').disabled, null, { timeout: 60000 });
+  assert.match(await page.locator('#video-metadata').textContent(), /30 videoframes\/s/);
+  await page.locator('#segment-start').fill('0.2'); await page.locator('#segment-duration').fill('0.2'); await page.locator('#segment-button').click();
+  await page.waitForFunction(() => document.querySelectorAll('#contact-sheet button').length === 6 && !document.querySelector('#segment-button').disabled);
+  await page.waitForFunction(() => document.querySelector('#current-frame').complete && document.querySelector('#current-frame').naturalWidth > 0);
+  assert.match(await page.locator('#frame-caption').textContent(), /frame 6/);
+  await page.locator('#frame-next').click(); assert.match(await page.locator('#frame-caption').textContent(), /frame 7/);
+  await page.locator('#frame-prev').click(); assert.match(await page.locator('#frame-caption').textContent(), /frame 6/);
+  await page.locator('#frame-position').fill('5'); assert.match(await page.locator('#frame-caption').textContent(), /frame 11/);
+  const download = page.waitForEvent('download'); await page.locator('#manifest-export').click();
+  const manifest = JSON.parse(await readFile(await (await download).path(), 'utf8')); assert.equal(manifest.selectedFrames.length, 6); assert.equal(manifest.originalGameFPS, null);
+  await page.screenshot({ path: 'test-results/import-desktop.png', fullPage: true });
+  await page.setViewportSize({ width: 390, height: 844 }); assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
+  await page.screenshot({ path: 'test-results/import-mobile.png', fullPage: true });
+  assert.deepEqual(errors, []);
+  console.log('PASS video-import browser: >36 MiB through 4 MiB chunks, local video preview, full upload, overview, exact native frames 6–11, previous/next/scrub, manifest download and mobile layout; no page errors. Synthetic fixture only.');
+} finally { await browser.close(); if (id) await rm(`research/imports/${id}`, { recursive: true, force: true }); await rm(path, { force: true }); }

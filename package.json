@@ -1,0 +1,24 @@
+{
+  "name": "freekick-battle-lab",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "test": "node --test tests/*.test.js",
+    "test:browser": "node tests/browser.mjs",
+    "database": "python scripts/build-database.py",
+    "validate": "node scripts/validate.mjs",
+    "package": "node scripts/package-game.mjs",
+    "test:game": "node tests/battle-browser.mjs"
+  },
+  "dependencies": {
+    "three": "^0.180.0"
+  },
+  "devDependencies": {
+    "vite": "^7.1.12",
+    "playwright": "^1.56.1"
+  }
+}

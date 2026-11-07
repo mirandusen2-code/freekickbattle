@@ -1,0 +1,16 @@
+{
+  "status": "implementation_choice",
+  "originalMeasured": false,
+  "simulationHz": 120,
+  "runupSeconds": 0.55,
+  "recoverySeconds": 1.8,
+  "keeperReactionSeconds": 0.28,
+  "keeperSpeedMetresPerSecond": 2.7,
+  "flightBaseSeconds": 1.35,
+  "flightPowerReductionSeconds": 0.58,
+  "originalRunupSeconds": null,
+  "originalRecoverySeconds": null,
+  "originalVideoFPS": 29.97002997002997,
+  "originalGameFPS": null,
+  "note": "Lokale labtimings; de standaardvideogame gebruikt een aanloop van 0,7s en resultaat van 4,2s. Opname 29,97003 fps gemeten; interne gameframerate en exacte inputgestuurde timings onbekend. Zie data/video-analysis.json."
+}

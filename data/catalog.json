@@ -1,0 +1,112 @@
+[
+  {
+    "id": "classic",
+    "category": "kit",
+    "name": "Academy blue",
+    "price": 0,
+    "color": "#238be5",
+    "detail": "De basis voor iedere vrije trap.",
+    "originalName": null,
+    "originalPrice": null,
+    "designStatus": "implementation_choice",
+    "costumeSourceIds": [],
+    "priceStatus": "implementation_choice"
+  },
+  {
+    "id": "sunset",
+    "category": "kit",
+    "name": "Sunset club",
+    "price": 120,
+    "color": "#ef7850",
+    "detail": "Een warm oranje clubtenue.",
+    "originalName": null,
+    "originalPrice": null,
+    "designStatus": "implementation_choice",
+    "costumeSourceIds": [],
+    "priceStatus": "implementation_choice"
+  },
+  {
+    "id": "pirate",
+    "category": "kit",
+    "name": "Pirate captain",
+    "price": 250,
+    "color": "#b63843",
+    "detail": "Een eigen uitvoering van een piratenkostuum.",
+    "originalName": null,
+    "originalPrice": null,
+    "designStatus": "implementation_choice",
+    "costumeSourceIds": [
+      "pg-2012"
+    ],
+    "priceStatus": "implementation_choice"
+  },
+  {
+    "id": "samurai",
+    "category": "kit",
+    "name": "Samurai spirit",
+    "price": 400,
+    "color": "#414765",
+    "detail": "Een eigen uitvoering met schouderpantser.",
+    "originalName": null,
+    "originalPrice": null,
+    "designStatus": "implementation_choice",
+    "costumeSourceIds": [
+      "pg-2012"
+    ],
+    "priceStatus": "implementation_choice"
+  },
+  {
+    "id": "bunny",
+    "category": "kit",
+    "name": "Rabbit club",
+    "price": 300,
+    "color": "#9d70cb",
+    "detail": "Een eigen uitvoering met konijnenoren.",
+    "originalName": null,
+    "originalPrice": null,
+    "designStatus": "implementation_choice",
+    "costumeSourceIds": [
+      "pg-2012"
+    ],
+    "priceStatus": "implementation_choice"
+  },
+  {
+    "id": "matchball",
+    "category": "ball",
+    "name": "Match day",
+    "price": 0,
+    "color": "#ffffff",
+    "detail": "De klassieke zwart-witte bal.",
+    "originalName": null,
+    "originalPrice": null,
+    "designStatus": "implementation_choice",
+    "costumeSourceIds": [],
+    "priceStatus": "implementation_choice"
+  },
+  {
+    "id": "volt",
+    "category": "ball",
+    "name": "Volt",
+    "price": 150,
+    "color": "#d2f15c",
+    "detail": "Fris limoengroen, dezelfde physics.",
+    "originalName": null,
+    "originalPrice": null,
+    "designStatus": "implementation_choice",
+    "costumeSourceIds": [],
+    "priceStatus": "implementation_choice"
+  },
+  {
+    "id": "coral",
+    "category": "ball",
+    "name": "Coral",
+    "price": 180,
+    "color": "#ff967d",
+    "detail": "Een opvallende koraalrode wedstrijdbal.",
+    "originalName": null,
+    "originalPrice": null,
+    "designStatus": "implementation_choice",
+    "costumeSourceIds": [],
+    "priceStatus": "implementation_choice"
+  }
+]

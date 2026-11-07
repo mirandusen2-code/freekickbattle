@@ -1,0 +1,170 @@
+[
+  {
+    "id": "title",
+    "path": "/reference/title.jpg",
+    "sourceId": "received-training-video",
+    "timeSeconds": 20,
+    "sourceRectangle": [
+      236,
+      114,
+      1684,
+      970
+    ],
+    "sha256": "40b9da87809afedc807fb3eb8d956b02d17f4bb1c4b9976899527e8a6f51ebb6",
+    "use": "UI crop or stationary texture; gameplay is independently simulated"
+  },
+  {
+    "id": "menu",
+    "path": "/reference/menu.jpg",
+    "sourceId": "received-training-video",
+    "timeSeconds": 25,
+    "sourceRectangle": [
+      236,
+      114,
+      1684,
+      970
+    ],
+    "sha256": "25e398502241c8cf7a9ea39abe236557720b682e1f1fb4f476c1cf43f4ec80cf",
+    "use": "UI crop or stationary texture; gameplay is independently simulated"
+  },
+  {
+    "id": "best",
+    "path": "/reference/best.png",
+    "sourceId": "received-training-video",
+    "timeSeconds": 30,
+    "sourceRectangle": [
+      395,
+      114,
+      791,
+      215
+    ],
+    "sha256": "2911697e3b6ae2c8a9d9e32d7735553fd9284ab002c8b77d68302d7993d124be",
+    "use": "UI crop or stationary texture; gameplay is independently simulated"
+  },
+  {
+    "id": "score",
+    "path": "/reference/score.png",
+    "sourceId": "received-training-video",
+    "timeSeconds": 30,
+    "sourceRectangle": [
+      805,
+      114,
+      1225,
+      215
+    ],
+    "sha256": "a0941dd8ae47e7d57e0ee1a01c2db124815c64940222dae5a70f03af75bb817f",
+    "use": "UI crop or stationary texture; gameplay is independently simulated"
+  },
+  {
+    "id": "life",
+    "path": "/reference/life.png",
+    "sourceId": "received-training-video",
+    "timeSeconds": 30,
+    "sourceRectangle": [
+      1246,
+      127,
+      1329,
+      210
+    ],
+    "sha256": "e9061ba13a8cf7cb1fec6e4c3b75082cd44d6de296ed9bf6e3294d5b08bb3972",
+    "use": "UI crop or stationary texture; gameplay is independently simulated"
+  },
+  {
+    "id": "miss",
+    "path": "/reference/miss.png",
+    "sourceId": "received-training-video",
+    "timeSeconds": 54,
+    "sourceRectangle": [
+      1246,
+      127,
+      1329,
+      210
+    ],
+    "sha256": "93655ed4351b0c653980ace12bb61f024952f652c6af8612efd5f5bb0cdfa190",
+    "use": "UI crop or stationary texture; gameplay is independently simulated"
+  },
+  {
+    "id": "pause",
+    "path": "/reference/pause.png",
+    "sourceId": "received-training-video",
+    "timeSeconds": 30,
+    "sourceRectangle": [
+      1378,
+      230,
+      1472,
+      322
+    ],
+    "sha256": "96cf21651ab43058a1663b573ddd7d99ffea0534ba83c7ff917cbcec9e8d406d",
+    "use": "UI crop or stationary texture; gameplay is independently simulated"
+  },
+  {
+    "id": "camera",
+    "path": "/reference/camera.png",
+    "sourceId": "received-training-video",
+    "timeSeconds": 30,
+    "sourceRectangle": [
+      1482,
+      230,
+      1576,
+      322
+    ],
+    "sha256": "ea039e48b5aaf6824241d3112b141676ff8c956686db740115060823c5e4e118",
+    "use": "UI crop or stationary texture; gameplay is independently simulated"
+  },
+  {
+    "id": "spin",
+    "path": "/reference/spin.png",
+    "sourceId": "received-training-video",
+    "timeSeconds": 30,
+    "sourceRectangle": [
+      1220,
+      590,
+      1589,
+      955
+    ],
+    "sha256": "58964b383500592245d2ec417a0bab72b0667ae461b12f7a760112b296772c65",
+    "use": "UI crop or stationary texture; gameplay is independently simulated"
+  },
+  {
+    "id": "arrow",
+    "path": "/reference/arrow.png",
+    "sourceId": "received-training-video",
+    "timeSeconds": 30,
+    "sourceRectangle": [
+      333,
+      807,
+      475,
+      951
+    ],
+    "sha256": "33637229117cc4ca07d0902e098be9c8cf16170bf6d02bf898f754af35fd6dab",
+    "use": "UI crop or stationary texture; gameplay is independently simulated"
+  },
+  {
+    "id": "crowd",
+    "path": "/reference/crowd.jpg",
+    "sourceId": "received-training-video",
+    "timeSeconds": 30,
+    "sourceRectangle": [
+      244,
+      280,
+      800,
+      478
+    ],
+    "sha256": "a01b6d0eb97206befb7984e0a4560c183645d1e0367362e329b986f57d32ce8a",
+    "use": "UI crop or stationary texture; gameplay is independently simulated"
+  },
+  {
+    "id": "advert",
+    "path": "/reference/advert.jpg",
+    "sourceId": "received-training-video",
+    "timeSeconds": 30,
+    "sourceRectangle": [
+      238,
+      487,
+      722,
+      588
+    ],
+    "sha256": "3b76e3221b43ebc75d189aa83466ca3060d152b6e79b83ca316d753dc07cf394",
+    "use": "UI crop or stationary texture; gameplay is independently simulated"
+  }
+]

@@ -1,0 +1,436 @@
+[
+  {
+    "id": "rookie",
+    "type": "kit",
+    "name": "Number 7",
+    "price": 0,
+    "color": "#f5f2e8",
+    "source": "video-visible",
+    "category": "kit",
+    "detail": "Wit/rood nummer 7 op de video; eigen 3D-model.",
+    "originalPrice": null,
+    "originalName": null,
+    "designStatus": "video_inspired",
+    "priceStatus": "implementation_choice",
+    "costumeSourceIds": [
+      "received-training-video"
+    ]
+  },
+  {
+    "id": "blue",
+    "type": "kit",
+    "name": "Blue striker",
+    "price": 100,
+    "color": "#228fea",
+    "source": "local-design",
+    "category": "kit",
+    "detail": "Eigen ontwerp en prijs.",
+    "originalPrice": null,
+    "originalName": null,
+    "designStatus": "implementation_choice",
+    "priceStatus": "implementation_choice",
+    "costumeSourceIds": [
+      "local-implementation"
+    ]
+  },
+  {
+    "id": "pirate",
+    "type": "kit",
+    "name": "Pirate",
+    "price": 150,
+    "color": "#a32235",
+    "source": "text-described-local-model",
+    "category": "kit",
+    "detail": "Kostuumtype genoemd in Pocket Gamer; eigen ontwerp en prijs.",
+    "originalPrice": null,
+    "originalName": null,
+    "designStatus": "implementation_choice",
+    "priceStatus": "implementation_choice",
+    "costumeSourceIds": [
+      "pg-2012"
+    ]
+  },
+  {
+    "id": "samurai",
+    "type": "kit",
+    "name": "Samurai",
+    "price": 200,
+    "color": "#3a455f",
+    "source": "text-described-local-model",
+    "category": "kit",
+    "detail": "Kostuumtype genoemd in Pocket Gamer; eigen ontwerp en prijs.",
+    "originalPrice": null,
+    "originalName": null,
+    "designStatus": "implementation_choice",
+    "priceStatus": "implementation_choice",
+    "costumeSourceIds": [
+      "pg-2012"
+    ]
+  },
+  {
+    "id": "bunny",
+    "type": "kit",
+    "name": "Rabbit",
+    "price": 150,
+    "color": "#a16bbb",
+    "source": "text-described-local-model",
+    "category": "kit",
+    "detail": "Kostuumtype genoemd in Pocket Gamer; eigen ontwerp en prijs.",
+    "originalPrice": null,
+    "originalName": null,
+    "designStatus": "implementation_choice",
+    "priceStatus": "implementation_choice",
+    "costumeSourceIds": [
+      "pg-2012"
+    ]
+  },
+  {
+    "id": "classic",
+    "type": "ball",
+    "name": "Classic",
+    "price": 0,
+    "color": "#ffffff",
+    "source": "local-design",
+    "category": "ball",
+    "detail": "Eigen ontwerp en prijs.",
+    "originalPrice": null,
+    "originalName": null,
+    "designStatus": "implementation_choice",
+    "priceStatus": "implementation_choice",
+    "costumeSourceIds": [
+      "local-implementation"
+    ]
+  },
+  {
+    "id": "gold-ball",
+    "type": "ball",
+    "name": "Gold strike",
+    "price": 100,
+    "color": "#f9d135",
+    "source": "local-design",
+    "category": "ball",
+    "detail": "Eigen ontwerp en prijs.",
+    "originalPrice": null,
+    "originalName": null,
+    "designStatus": "implementation_choice",
+    "priceStatus": "implementation_choice",
+    "costumeSourceIds": [
+      "local-implementation"
+    ]
+  },
+  {
+    "id": "lime-ball",
+    "type": "ball",
+    "name": "Lime",
+    "price": 100,
+    "color": "#bcf33c",
+    "source": "local-design",
+    "category": "ball",
+    "detail": "Eigen ontwerp en prijs.",
+    "originalPrice": null,
+    "originalName": null,
+    "designStatus": "implementation_choice",
+    "priceStatus": "implementation_choice",
+    "costumeSourceIds": [
+      "local-implementation"
+    ]
+  },
+  {
+    "id": "pigtails",
+    "type": "hair",
+    "category": "hair",
+    "name": "Brown pigtails",
+    "price": 0,
+    "color": "#634015",
+    "source": "text-described-local-model",
+    "detail": "Categorie door 148Apps beschreven; eigen ontwerp en lokale prijs.",
+    "originalName": null,
+    "originalPrice": null,
+    "designStatus": "implementation_choice",
+    "priceStatus": "implementation_choice",
+    "costumeSourceIds": [
+      "148apps-review"
+    ],
+    "style": "twins"
+  },
+  {
+    "id": "black-pony",
+    "type": "hair",
+    "category": "hair",
+    "name": "Black ponytail",
+    "price": 100,
+    "color": "#25201c",
+    "source": "text-described-local-model",
+    "detail": "Categorie door 148Apps beschreven; eigen ontwerp en lokale prijs.",
+    "originalName": null,
+    "originalPrice": null,
+    "designStatus": "implementation_choice",
+    "priceStatus": "implementation_choice",
+    "costumeSourceIds": [
+      "148apps-review"
+    ],
+    "style": "pony"
+  },
+  {
+    "id": "short-hair",
+    "type": "hair",
+    "category": "hair",
+    "name": "Short cut",
+    "price": 150,
+    "color": "#7e4b24",
+    "source": "text-described-local-model",
+    "detail": "Categorie door 148Apps beschreven; eigen ontwerp en lokale prijs.",
+    "originalName": null,
+    "originalPrice": null,
+    "designStatus": "implementation_choice",
+    "priceStatus": "implementation_choice",
+    "costumeSourceIds": [
+      "148apps-review"
+    ],
+    "style": "short"
+  },
+  {
+    "id": "rookie-boots",
+    "type": "shoes",
+    "category": "shoes",
+    "name": "Red boots",
+    "price": 0,
+    "color": "#70271b",
+    "source": "text-described-local-model",
+    "detail": "Categorie door 148Apps beschreven; eigen ontwerp en lokale prijs. Lokale krachtbonus: 0%; oorspronkelijke statwaarden onbekend.",
+    "originalName": null,
+    "originalPrice": null,
+    "designStatus": "implementation_choice",
+    "priceStatus": "implementation_choice",
+    "costumeSourceIds": [
+      "148apps-review"
+    ],
+    "powerBoost": 0
+  },
+  {
+    "id": "sprint-boots",
+    "type": "shoes",
+    "category": "shoes",
+    "name": "Sprint boots",
+    "price": 125,
+    "color": "#166db6",
+    "source": "text-described-local-model",
+    "detail": "Categorie door 148Apps beschreven; eigen ontwerp en lokale prijs. Lokale krachtbonus: 3%; oorspronkelijke statwaarden onbekend.",
+    "originalName": null,
+    "originalPrice": null,
+    "designStatus": "implementation_choice",
+    "priceStatus": "implementation_choice",
+    "costumeSourceIds": [
+      "148apps-review"
+    ],
+    "powerBoost": 0.03
+  },
+  {
+    "id": "pro-boots",
+    "type": "shoes",
+    "category": "shoes",
+    "name": "Pro boots",
+    "price": 175,
+    "color": "#252632",
+    "source": "text-described-local-model",
+    "detail": "Categorie door 148Apps beschreven; eigen ontwerp en lokale prijs. Lokale krachtbonus: 6%; oorspronkelijke statwaarden onbekend.",
+    "originalName": null,
+    "originalPrice": null,
+    "designStatus": "implementation_choice",
+    "priceStatus": "implementation_choice",
+    "costumeSourceIds": [
+      "148apps-review"
+    ],
+    "powerBoost": 0.06
+  },
+  {
+    "id": "white-shorts",
+    "type": "shorts",
+    "category": "shorts",
+    "name": "White shorts",
+    "price": 0,
+    "color": "#f6f4ea",
+    "source": "text-described-local-model",
+    "detail": "Categorie door 148Apps beschreven; eigen ontwerp en lokale prijs.",
+    "originalName": null,
+    "originalPrice": null,
+    "designStatus": "implementation_choice",
+    "priceStatus": "implementation_choice",
+    "costumeSourceIds": [
+      "148apps-review"
+    ]
+  },
+  {
+    "id": "blue-shorts",
+    "type": "shorts",
+    "category": "shorts",
+    "name": "Blue shorts",
+    "price": 100,
+    "color": "#2266b4",
+    "source": "text-described-local-model",
+    "detail": "Categorie door 148Apps beschreven; eigen ontwerp en lokale prijs.",
+    "originalName": null,
+    "originalPrice": null,
+    "designStatus": "implementation_choice",
+    "priceStatus": "implementation_choice",
+    "costumeSourceIds": [
+      "148apps-review"
+    ]
+  },
+  {
+    "id": "black-shorts",
+    "type": "shorts",
+    "category": "shorts",
+    "name": "Black shorts",
+    "price": 150,
+    "color": "#252e3b",
+    "source": "text-described-local-model",
+    "detail": "Categorie door 148Apps beschreven; eigen ontwerp en lokale prijs.",
+    "originalName": null,
+    "originalPrice": null,
+    "designStatus": "implementation_choice",
+    "priceStatus": "implementation_choice",
+    "costumeSourceIds": [
+      "148apps-review"
+    ]
+  },
+  {
+    "id": "bare-face",
+    "type": "glasses",
+    "category": "glasses",
+    "name": "No glasses",
+    "price": 0,
+    "color": "#e7d0ab",
+    "source": "text-described-local-model",
+    "detail": "Categorie door 148Apps beschreven; eigen ontwerp en lokale prijs.",
+    "originalName": null,
+    "originalPrice": null,
+    "designStatus": "implementation_choice",
+    "priceStatus": "implementation_choice",
+    "costumeSourceIds": [
+      "148apps-review"
+    ],
+    "style": "none"
+  },
+  {
+    "id": "sport-glasses",
+    "type": "glasses",
+    "category": "glasses",
+    "name": "Sport glasses",
+    "price": 75,
+    "color": "#334d67",
+    "source": "text-described-local-model",
+    "detail": "Categorie door 148Apps beschreven; eigen ontwerp en lokale prijs.",
+    "originalName": null,
+    "originalPrice": null,
+    "designStatus": "implementation_choice",
+    "priceStatus": "implementation_choice",
+    "costumeSourceIds": [
+      "148apps-review"
+    ],
+    "style": "sport"
+  },
+  {
+    "id": "sun-glasses",
+    "type": "glasses",
+    "category": "glasses",
+    "name": "Sunglasses",
+    "price": 125,
+    "color": "#142132",
+    "source": "text-described-local-model",
+    "detail": "Categorie door 148Apps beschreven; eigen ontwerp en lokale prijs.",
+    "originalName": null,
+    "originalPrice": null,
+    "designStatus": "implementation_choice",
+    "priceStatus": "implementation_choice",
+    "costumeSourceIds": [
+      "148apps-review"
+    ],
+    "style": "sun"
+  },
+  {
+    "id": "light-skin",
+    "type": "skin",
+    "category": "skin",
+    "name": "Light",
+    "price": 0,
+    "color": "#e6bda1",
+    "source": "text-described-local-model",
+    "detail": "Categorie door 148Apps beschreven; eigen ontwerp en lokale prijs.",
+    "originalName": null,
+    "originalPrice": null,
+    "designStatus": "implementation_choice",
+    "priceStatus": "implementation_choice",
+    "costumeSourceIds": [
+      "148apps-review"
+    ]
+  },
+  {
+    "id": "tan-skin",
+    "type": "skin",
+    "category": "skin",
+    "name": "Tan",
+    "price": 100,
+    "color": "#b6815c",
+    "source": "text-described-local-model",
+    "detail": "Categorie door 148Apps beschreven; eigen ontwerp en lokale prijs.",
+    "originalName": null,
+    "originalPrice": null,
+    "designStatus": "implementation_choice",
+    "priceStatus": "implementation_choice",
+    "costumeSourceIds": [
+      "148apps-review"
+    ]
+  },
+  {
+    "id": "dark-skin",
+    "type": "skin",
+    "category": "skin",
+    "name": "Dark",
+    "price": 100,
+    "color": "#69432e",
+    "source": "text-described-local-model",
+    "detail": "Categorie door 148Apps beschreven; eigen ontwerp en lokale prijs.",
+    "originalName": null,
+    "originalPrice": null,
+    "designStatus": "implementation_choice",
+    "priceStatus": "implementation_choice",
+    "costumeSourceIds": [
+      "148apps-review"
+    ]
+  },
+  {
+    "id": "female",
+    "type": "gender",
+    "category": "gender",
+    "name": "Female",
+    "price": 0,
+    "color": "#e6bda1",
+    "source": "text-described-local-model",
+    "detail": "Gratis geslachtskeuze is tekstueel bevestigd; het 3D-model is een lokale interpretatie.",
+    "originalName": null,
+    "originalPrice": null,
+    "designStatus": "implementation_choice",
+    "priceStatus": "implementation_choice",
+    "costumeSourceIds": [
+      "148apps-review"
+    ]
+  },
+  {
+    "id": "male",
+    "type": "gender",
+    "category": "gender",
+    "name": "Male",
+    "price": 0,
+    "color": "#e6bda1",
+    "source": "text-described-local-model",
+    "detail": "Gratis geslachtskeuze is tekstueel bevestigd; het 3D-model is een lokale interpretatie.",
+    "originalName": null,
+    "originalPrice": null,
+    "designStatus": "implementation_choice",
+    "priceStatus": "implementation_choice",
+    "costumeSourceIds": [
+      "148apps-review"
+    ]
+  }
+]

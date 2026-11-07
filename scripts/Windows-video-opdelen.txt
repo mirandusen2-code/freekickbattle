@@ -1,0 +1,70 @@
+& {
+    $ErrorActionPreference = 'Stop'
+    Add-Type -AssemblyName System.Windows.Forms
+    Add-Type -AssemblyName System.IO.Compression
+
+    $keuze = New-Object System.Windows.Forms.OpenFileDialog
+    $keuze.Title = 'Kies de originele video'
+    $keuze.Filter = 'Videobestanden|*.mp4;*.mov;*.m4v;*.webm|Alle bestanden|*.*'
+    if ($keuze.ShowDialog() -ne [System.Windows.Forms.DialogResult]::OK) { return }
+
+    $bronpad = $keuze.FileName
+    $mapnaam = 'Video-delen-' + (Get-Date -Format 'yyyyMMdd-HHmmss') + '-' + ([Guid]::NewGuid().ToString('N').Substring(0, 6))
+    $uitvoer = Join-Path ([Environment]::GetFolderPath('Desktop')) $mapnaam
+    [void][System.IO.Directory]::CreateDirectory($uitvoer)
+    $bron = [System.IO.File]::OpenRead($bronpad)
+    $deelgrootte = 24MB
+    $buffer = New-Object byte[] (1MB)
+    $delen = @()
+    $nummer = 0
+    $totaleGrootte = $bron.Length
+    try {
+        if ($totaleGrootte -eq 0) { throw 'Het gekozen bestand is leeg.' }
+        while ($bron.Position -lt $bron.Length) {
+            $nummer++
+            $offset = $bron.Position
+            $zipnaam = 'video-deel-{0:D4}.zip' -f $nummer
+            $binnaam = 'deel-{0:D4}.bin' -f $nummer
+            $zippad = Join-Path $uitvoer $zipnaam
+            $zipbestand = [System.IO.File]::Create($zippad)
+            $archief = $null
+            $doel = $null
+            $geschreven = 0
+            try {
+                $archief = [System.IO.Compression.ZipArchive]::new($zipbestand, [System.IO.Compression.ZipArchiveMode]::Create, $false)
+                $item = $archief.CreateEntry($binnaam, [System.IO.Compression.CompressionLevel]::NoCompression)
+                $doel = $item.Open()
+                while ($geschreven -lt $deelgrootte -and $bron.Position -lt $bron.Length) {
+                    $aantal = [int][Math]::Min($buffer.Length, $deelgrootte - $geschreven)
+                    $gelezen = $bron.Read($buffer, 0, $aantal)
+                    if ($gelezen -le 0) { throw 'Het bronbestand kon niet volledig worden gelezen.' }
+                    $doel.Write($buffer, 0, $gelezen)
+                    $geschreven += $gelezen
+                }
+            }
+            finally {
+                if ($null -ne $doel) { $doel.Dispose() }
+                if ($null -ne $archief) { $archief.Dispose() }
+                $zipbestand.Dispose()
+            }
+            if ((Get-Item -LiteralPath $zippad).Length -ge 32MB) { throw 'Een ZIP-deel is onverwacht te groot.' }
+            $delen += [pscustomobject]@{ file = $zipnaam; entry = $binnaam; offset = $offset; bytes = $geschreven }
+            Write-Host ('Deel {0} klaar...' -f $nummer)
+        }
+    }
+    finally { $bron.Dispose() }
+
+    $controle = (Get-FileHash -LiteralPath $bronpad -Algorithm SHA256).Hash.ToLowerInvariant()
+    $manifest = [pscustomobject]@{
+        schemaVersion = 1
+        originalName = [System.IO.Path]::GetFileName($bronpad)
+        originalBytes = $totaleGrootte
+        originalSHA256 = $controle
+        partBytes = $deelgrootte
+        partCount = $nummer
+        parts = $delen
+    }
+    $manifest | ConvertTo-Json -Depth 5 | Set-Content -LiteralPath (Join-Path $uitvoer 'manifest.json') -Encoding UTF8
+    Write-Host ('Klaar. Upload alle ZIP-bestanden en manifest.json uit: ' + $uitvoer)
+    Start-Process explorer.exe -ArgumentList ('"' + $uitvoer + '"')
+}

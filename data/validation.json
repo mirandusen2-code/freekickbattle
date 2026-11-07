@@ -1,0 +1,76 @@
+{
+  "status": "passed",
+  "generatedAt": "2026-11-07T16:06:57.430Z",
+  "checks": [
+    {
+      "id": "database",
+      "status": "passed",
+      "command": "python scripts/build-database.py",
+      "exitCode": 0,
+      "completedAt": "2026-11-07T16:00:31.885Z"
+    },
+    {
+      "id": "unit",
+      "status": "passed",
+      "command": "npm test",
+      "exitCode": 0,
+      "completedAt": "2026-11-07T16:00:36.503Z"
+    },
+    {
+      "id": "reference-game-browser",
+      "status": "passed",
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node tests/battle-browser.mjs",
+      "exitCode": 0,
+      "completedAt": "2026-11-07T16:01:51.807Z"
+    },
+    {
+      "id": "battle-scenes",
+      "status": "passed",
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node tests/battle-scenes.mjs",
+      "exitCode": 0,
+      "completedAt": "2026-11-07T16:02:48.327Z"
+    },
+    {
+      "id": "browser",
+      "status": "passed",
+      "command": "npm run test:browser",
+      "exitCode": 0,
+      "completedAt": "2026-11-07T16:03:33.448Z"
+    },
+    {
+      "id": "extended-browser",
+      "status": "passed",
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node tests/extended-browser.mjs",
+      "exitCode": 0,
+      "completedAt": "2026-11-07T16:06:29.321Z"
+    },
+    {
+      "id": "import-browser",
+      "status": "passed",
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node tests/import-browser.mjs",
+      "exitCode": 0,
+      "completedAt": "2026-11-07T16:06:41.099Z"
+    },
+    {
+      "id": "build",
+      "status": "passed",
+      "command": "npm run build",
+      "exitCode": 0,
+      "completedAt": "2026-11-07T16:06:44.825Z"
+    },
+    {
+      "id": "standalone-package",
+      "status": "passed",
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node scripts/package-game.mjs",
+      "exitCode": 0,
+      "completedAt": "2026-11-07T16:06:47.510Z"
+    },
+    {
+      "id": "standalone-browser",
+      "status": "passed",
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node tests/standalone-browser.mjs",
+      "exitCode": 0,
+      "completedAt": "2026-11-07T16:06:57.429Z"
+    }
+  ]
+}

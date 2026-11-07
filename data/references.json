@@ -1,0 +1,841 @@
+{
+  "schemaVersion": 2,
+  "subject": "Freekick Battle",
+  "scope": "Ontvangen Training-video: geverifieerde integriteit, volledige technische frame-index, expliciete visuele observaties en speelbare reconstructie; oorspronkelijke shop onvolledig bekend.",
+  "sources": [
+    {
+      "id": "pg-2012",
+      "title": "Kick balls to your heart’s content with Gamevil's Freekick Battle on Android",
+      "author": "Matthew Diener",
+      "published": "2012-08-09",
+      "url": "https://www.pocketgamer.com/freekick-battle/kick-balls-to-your-hearts-content-with-gamevils-freekick-battle-on-android/",
+      "access": "read",
+      "httpStatus": 200,
+      "localPath": "research/pocketgamer-article.html",
+      "note": "Artikeltekst daadwerkelijk gelezen; geen afbeeldingen bekeken."
+    },
+    {
+      "id": "pg-game",
+      "title": "Freekick Battle game page",
+      "url": "https://www.pocketgamer.com/freekick-battle/",
+      "access": "read",
+      "httpStatus": 200,
+      "localPath": "research/pocketgamer.html",
+      "note": "Identificeert COCOSOFT en Gamevil."
+    },
+    {
+      "id": "training-video",
+      "title": "Freekick Battle — Training — TouchGameplay",
+      "url": "https://www.youtube.com/watch?v=MSTnwRicRSw",
+      "access": "blocked",
+      "httpStatus": null,
+      "localPath": null,
+      "note": "Proxy CONNECT 403; geen pagina, video of metadata ontvangen. Titel afkomstig van de gebruikersbijlage."
+    },
+    {
+      "id": "pg-trailer",
+      "title": "Trailer gekoppeld door Pocket Gamer",
+      "url": "https://www.youtube.com/watch?v=CjhiYfnfuDM",
+      "access": "linked_not_viewed",
+      "httpStatus": null,
+      "localPath": null,
+      "note": "Video-ID uit artikel-embed; video niet bekeken."
+    },
+    {
+      "id": "pg-screenshot",
+      "title": "Android Freekick Battle screenshot",
+      "url": "https://media.pocketgamer.com/artwork/na-ouog/android_gamevil_freekick_battle_01.png",
+      "access": "blocked",
+      "httpStatus": null,
+      "localPath": null,
+      "note": "Proxy CONNECT 403; alleen de afbeeldingsverwijzing is bekend."
+    },
+    {
+      "id": "google-images",
+      "title": "Google Afbeeldingen — Freekick Battle",
+      "url": "https://www.google.com/search?tbm=isch&q=%22Freekick%20Battle%22&hl=en",
+      "access": "robot_check",
+      "httpStatus": null,
+      "localPath": "research/raw/google-images-browser.html",
+      "note": "Na goedgekeurde CA-registratie werkt TLS buiten de commandsandbox. Google toont een controle op ongebruikelijk verkeer; geen afbeeldingen of zoekresultaten ontvangen."
+    },
+    {
+      "id": "local-implementation",
+      "title": "Eigen lokale spelimplementatie",
+      "url": null,
+      "access": "local",
+      "httpStatus": null,
+      "localPath": "src/game.js",
+      "note": "Bewijs voor lokale functionaliteit, niet voor het originele spel."
+    },
+    {
+      "id": "148apps-review",
+      "title": "Freekick Battle Review — Jordan Minor, 12 april 2012",
+      "url": "https://www.148apps.com/reviews/freekick-battle-review/",
+      "access": "read",
+      "httpStatus": 200,
+      "localPath": "research/148apps-review.html",
+      "note": "Recensietekst daadwerkelijk gelezen. Bevestigt haar, statverhogende schoenen, broeken, brillen, betaalde huidskleur en gratis geslachtskeuze. Exacte ontwerpen en prijzen niet getoond."
+    },
+    {
+      "id": "148apps-image",
+      "title": "Afbeelding gekoppeld aan 148Apps-recensie",
+      "url": "https://images.148apps.com/2012/4/41905/119599/freekick-1-300x200.jpg",
+      "access": "blocked",
+      "httpStatus": 403,
+      "localPath": null,
+      "note": "Afbeeldingsverwijzing gevonden, ophalen levert 403; niet als bekeken beeld gebruikt."
+    },
+    {
+      "id": "received-training-video",
+      "title": "Door gebruiker aangeleverde TouchGameplay Training-opname — 13 ZIP-delen",
+      "url": "https://www.youtube.com/watch?v=MSTnwRicRSw",
+      "access": "visually_sampled",
+      "localPath": "research/original/training.mp4",
+      "expectedSHA256": "68a71a62c5c6f89599ba688b8dfc0737f90a7a065d228daf9490876f04cd173d",
+      "note": "Volledig gereconstrueerd en SHA-256 gecontroleerd; alle 26.975 frames technisch gedecodeerd. Visueel onderzocht met overzichtsplaten, dichte schot- en native detailbeelden; niet elk frame handmatig beoordeeld."
+    }
+  ],
+  "facts": [
+    {
+      "id": "developer",
+      "area": "identity",
+      "statement": "Ontwikkelaar COCOSOFT, uitgever Gamevil.",
+      "status": "source_documented",
+      "sourceIds": [
+        "pg-game"
+      ]
+    },
+    {
+      "id": "tap-kick",
+      "area": "controls",
+      "statement": "De beschrijving noemt een eenvoudige tap-to-kick-interface met een physics-engine.",
+      "status": "source_documented",
+      "sourceIds": [
+        "pg-2012"
+      ]
+    },
+    {
+      "id": "match",
+      "area": "modes",
+      "statement": "Match Mode combineert een klok en tegenstander.",
+      "status": "source_documented",
+      "sourceIds": [
+        "pg-2012"
+      ]
+    },
+    {
+      "id": "arcade",
+      "area": "modes",
+      "statement": "Arcade Mode wordt als eindeloos beschreven.",
+      "status": "source_documented",
+      "sourceIds": [
+        "pg-2012"
+      ]
+    },
+    {
+      "id": "pvp",
+      "area": "network",
+      "statement": "De originele game beschreef AI-tegenstanders en synchrone online PvP.",
+      "status": "source_documented",
+      "sourceIds": [
+        "pg-2012"
+      ]
+    },
+    {
+      "id": "costumes",
+      "area": "shop",
+      "statement": "De tekst noemt piraten-, samoerai- en bunnygirlkostuums, voornamelijk via in-appaankopen.",
+      "status": "source_documented",
+      "sourceIds": [
+        "pg-2012"
+      ]
+    },
+    {
+      "id": "training-rules",
+      "area": "modes",
+      "statement": "Training gebruikt drie missers als levens. Een doelpunt behoudt de overgebleven voetballen; de derde misser leidt naar de ranglijst.",
+      "status": "visually_verified",
+      "sourceIds": [
+        "received-training-video"
+      ]
+    },
+    {
+      "id": "catalog-complete",
+      "area": "shop",
+      "statement": "De volledige originele inventaris, categorieën, namen, prijzen en statistieken zijn onbekend.",
+      "status": "unknown",
+      "sourceIds": []
+    },
+    {
+      "id": "original-fps",
+      "area": "timing",
+      "statement": "De ontvangen video is 30000/1001 (29,97003) fps en bevat 26.975 frames. De interne gameframerate is onbekend.",
+      "status": "source_documented",
+      "sourceIds": [
+        "received-training-video"
+      ]
+    },
+    {
+      "id": "original-animation",
+      "area": "timing",
+      "statement": "Eerste balcontact is visueel gelokaliseerd rond 35,30–35,40s en doelpuntfeedback rond 36,3s. Andere timingparameters blijven gedeeltelijk geschat.",
+      "status": "source_documented",
+      "sourceIds": [
+        "received-training-video"
+      ]
+    },
+    {
+      "id": "camera",
+      "area": "visual",
+      "statement": "HUD, menu en statische stadiondetails zijn op de video afgestemd met gedocumenteerde uitsneden. 3D-modellen, animaties en camera zijn eigen benaderingen.",
+      "status": "implementation_choice",
+      "sourceIds": [
+        "received-training-video",
+        "local-implementation"
+      ]
+    },
+    {
+      "id": "replay",
+      "area": "timing",
+      "statement": "De lokale game neemt een schot op met 120 simulatiestappen per seconde. Dat zijn geen frames uit de originele video.",
+      "status": "implementation_choice",
+      "sourceIds": [
+        "local-implementation"
+      ]
+    },
+    {
+      "id": "shop-categories-review",
+      "area": "shop",
+      "statement": "De recensie noemt kapsels, statverhogende schoenen, broeken, brillen, betaalde huidskleur en gratis geslachtskeuze; exacte itemontwerpen, prijzen en statwaarden ontbreken.",
+      "status": "source_documented",
+      "sourceIds": [
+        "148apps-review"
+      ]
+    },
+    {
+      "id": "passing-review",
+      "area": "controls",
+      "statement": "Latere situaties voegen passen naar een medespeler toe; de recensie bevestigt kracht, hoek en hoogte via touch.",
+      "status": "source_documented",
+      "sourceIds": [
+        "148apps-review"
+      ]
+    },
+    {
+      "id": "video-observation-title",
+      "area": "menu",
+      "statement": "Geel Free Kick Battle-titelscherm met START. Referentie: circa 20s.",
+      "status": "visually_verified",
+      "sourceIds": [
+        "received-training-video"
+      ]
+    },
+    {
+      "id": "video-observation-main-menu",
+      "area": "menu",
+      "statement": "Tabs PLAY, SHOP, PROFILE, OPTION; MATCH PLAY, ARCADE, TRAINING, CREDIT; onderaan gold, premium, level en energie. Referentie: circa 25s.",
+      "status": "visually_verified",
+      "sourceIds": [
+        "received-training-video"
+      ]
+    },
+    {
+      "id": "video-observation-training-hud",
+      "area": "controls",
+      "statement": "BEST/SCORE, drie voetballen, pauze en camera, groene pijlen, afstand 21m, grote SPIN-bal en schuine krachtmeter. Referentie: circa 30s.",
+      "status": "visually_verified",
+      "sourceIds": [
+        "received-training-video"
+      ]
+    },
+    {
+      "id": "video-observation-first-goal",
+      "area": "scoring",
+      "statement": "Eerste doelpunt: Technique +100; score 100 en drie ongebruikte levens. Referentie: circa 38s.",
+      "status": "visually_verified",
+      "sourceIds": [
+        "received-training-video"
+      ]
+    },
+    {
+      "id": "video-observation-first-miss",
+      "area": "rules",
+      "statement": "Na de eerste misser heeft Training een rood kruis en twee ongebruikte voetballen. Referentie: circa 50s.",
+      "status": "visually_verified",
+      "sourceIds": [
+        "received-training-video"
+      ]
+    },
+    {
+      "id": "video-observation-second-goal",
+      "area": "scoring",
+      "statement": "Score 400 na bonussen; slechts één leven gebruikt. Referentie: circa 56s.",
+      "status": "visually_verified",
+      "sourceIds": [
+        "received-training-video"
+      ]
+    },
+    {
+      "id": "video-observation-second-miss",
+      "area": "rules",
+      "statement": "Twee rode kruisen; de ronde blijft speelbaar. Referentie: circa 74s.",
+      "status": "visually_verified",
+      "sourceIds": [
+        "received-training-video"
+      ]
+    },
+    {
+      "id": "video-observation-third-goal",
+      "area": "scoring",
+      "statement": "Technique +100 en No Bounce +100 worden afgebeeld; twee kruisen blijven staan. Referentie: circa 80s.",
+      "status": "visually_verified",
+      "sourceIds": [
+        "received-training-video"
+      ]
+    },
+    {
+      "id": "video-observation-ranking-600",
+      "area": "ranking",
+      "statement": "TRAINING RANKING met score 600, één ster en uiteindelijk 50 gold; NEXT LEVEL, RETRY, MENU. Referentie: circa 89s.",
+      "status": "visually_verified",
+      "sourceIds": [
+        "received-training-video"
+      ]
+    },
+    {
+      "id": "video-observation-stage2",
+      "area": "stages",
+      "statement": "Stage 2: 21m, keeper en geen verdedigingsmuur; schuine veldoriëntatie. BEST begint op 0: de trainingsbestscore hoort bij de stage. Referentie: circa 134s.",
+      "status": "visually_verified",
+      "sourceIds": [
+        "received-training-video"
+      ]
+    },
+    {
+      "id": "video-observation-stage3",
+      "area": "stages",
+      "statement": "Stage 3: 27m, muur van twee verdedigers. Referentie: circa 197s.",
+      "status": "visually_verified",
+      "sourceIds": [
+        "received-training-video"
+      ]
+    },
+    {
+      "id": "video-observation-stage4",
+      "area": "stages",
+      "statement": "Stage 4: 27m, muur van twee verdedigers en gewijzigde veldoriëntatie. Referentie: circa 265s.",
+      "status": "visually_verified",
+      "sourceIds": [
+        "received-training-video"
+      ]
+    },
+    {
+      "id": "video-observation-stage5",
+      "area": "stages",
+      "statement": "Stage 5: 42m, twee verdedigers. Referentie: circa 421s.",
+      "status": "visually_verified",
+      "sourceIds": [
+        "received-training-video"
+      ]
+    },
+    {
+      "id": "video-observation-stage6",
+      "area": "stages",
+      "statement": "Stage 6: 42m, twee verdedigers, CHANCE / POWER SHOT en PASS in beeld. Referentie: circa 611s.",
+      "status": "visually_verified",
+      "sourceIds": [
+        "received-training-video"
+      ]
+    },
+    {
+      "id": "video-observation-stage7",
+      "area": "stages",
+      "statement": "Stage 7: 37m, drie verdedigers en CHANCE / POWER SHOT. Referentie: circa 780s.",
+      "status": "visually_verified",
+      "sourceIds": [
+        "received-training-video"
+      ]
+    },
+    {
+      "id": "video-observation-stage8",
+      "area": "stages",
+      "statement": "Stage 8: 32m en vier verdedigers. Referentie: circa 871s.",
+      "status": "visually_verified",
+      "sourceIds": [
+        "received-training-video"
+      ]
+    },
+    {
+      "id": "video-observation-pass-option",
+      "area": "passing",
+      "statement": "Stage 6 toont een medespeler met PASS-ballon en CHANCE / POWER SHOT. Referentie: circa 611s.",
+      "status": "visually_verified",
+      "sourceIds": [
+        "received-training-video"
+      ]
+    },
+    {
+      "id": "video-observation-pass-timing",
+      "area": "passing",
+      "statement": "Na de pas verschijnt een timingcirkel rond de bal bij de ontvanger. Referentie: circa 619s.",
+      "status": "visually_verified",
+      "sourceIds": [
+        "received-training-video"
+      ]
+    },
+    {
+      "id": "video-observation-bicycle-cross",
+      "area": "passing",
+      "statement": "Een PERFECT-timingreactie gaat over in een omhaal; de volgende goal levert Technique +100 en Cross +100 op. Referentie: circa 622s.",
+      "status": "visually_verified",
+      "sourceIds": [
+        "received-training-video"
+      ]
+    }
+  ],
+  "features": [
+    {
+      "id": "training-three-misses",
+      "area": "modes",
+      "name": "Videogame: Training met drie missers; tien-schotsproef blijft alleen in het aparte lab",
+      "implementation": "implemented",
+      "verification": "reference-game-browser"
+    },
+    {
+      "id": "arcade-lives",
+      "area": "modes",
+      "name": "Videogame: Arcade met drie levens en stageprogressie; vijf-levensproef alleen in lab",
+      "implementation": "implemented",
+      "verification": "reference-game-browser"
+    },
+    {
+      "id": "match-clock",
+      "area": "modes",
+      "name": "Match: klok, pauze en eindtijd",
+      "implementation": "implemented",
+      "verification": "session"
+    },
+    {
+      "id": "last-shot",
+      "area": "modes",
+      "name": "Laatste ingezette schot telt mee",
+      "implementation": "implemented",
+      "verification": "session"
+    },
+    {
+      "id": "local-ai",
+      "area": "modes",
+      "name": "Lokale AI met gesimuleerde schoten",
+      "implementation": "implemented",
+      "verification": "session"
+    },
+    {
+      "id": "real-pvp",
+      "area": "network",
+      "name": "Online synchrone PvP",
+      "implementation": "not_implemented",
+      "verification": "none"
+    },
+    {
+      "id": "goal",
+      "area": "physics",
+      "name": "Doelpunt en keeperredding",
+      "implementation": "implemented",
+      "verification": "physics"
+    },
+    {
+      "id": "woodwork",
+      "area": "physics",
+      "name": "Paal, lat en uit",
+      "implementation": "implemented",
+      "verification": "physics"
+    },
+    {
+      "id": "wall",
+      "area": "physics",
+      "name": "Verdedigingsmuur",
+      "implementation": "implemented",
+      "verification": "physics"
+    },
+    {
+      "id": "spin",
+      "area": "physics",
+      "name": "Effect en schotkracht",
+      "implementation": "implemented",
+      "verification": "physics"
+    },
+    {
+      "id": "fixed-step",
+      "area": "timing",
+      "name": "Physics onafhankelijk van rendercadans",
+      "implementation": "implemented",
+      "verification": "physics"
+    },
+    {
+      "id": "shop-funds",
+      "area": "shop",
+      "name": "Saldo, exact genoeg en onvoldoende saldo",
+      "implementation": "implemented",
+      "verification": "shop"
+    },
+    {
+      "id": "shop-owned",
+      "area": "shop",
+      "name": "Eigendom, dubbele aankoop en gratis wisselen",
+      "implementation": "implemented",
+      "verification": "shop"
+    },
+    {
+      "id": "shop-persistence",
+      "area": "shop",
+      "name": "Uitgeruste items na herladen",
+      "implementation": "implemented",
+      "verification": "browser"
+    },
+    {
+      "id": "profile-validation",
+      "area": "storage",
+      "name": "Beschadigde profielen en ontbrekende opslag",
+      "implementation": "implemented",
+      "verification": "browser"
+    },
+    {
+      "id": "pointer",
+      "area": "controls",
+      "name": "Klikken en aanraken",
+      "implementation": "implemented",
+      "verification": "browser"
+    },
+    {
+      "id": "keyboard",
+      "area": "controls",
+      "name": "Toetsenbord en pauze met knopfocus",
+      "implementation": "implemented",
+      "verification": "browser"
+    },
+    {
+      "id": "responsive",
+      "area": "visual",
+      "name": "Mobiele indeling en canvasresizing",
+      "implementation": "implemented",
+      "verification": "browser"
+    },
+    {
+      "id": "webgl-fallback",
+      "area": "visual",
+      "name": "Foutmelding bij ontbrekend WebGL",
+      "implementation": "implemented",
+      "verification": "browser"
+    },
+    {
+      "id": "replay-step",
+      "area": "replay",
+      "name": "Schot stap voor stap bekijken",
+      "implementation": "implemented",
+      "verification": "replay"
+    },
+    {
+      "id": "replay-speed",
+      "area": "replay",
+      "name": "Replay scrubben en vertraagd afspelen",
+      "implementation": "implemented",
+      "verification": "browser"
+    },
+    {
+      "id": "replay-export",
+      "area": "replay",
+      "name": "Schot als JSON bewaren",
+      "implementation": "implemented",
+      "verification": "browser"
+    },
+    {
+      "id": "replay-isolation",
+      "area": "replay",
+      "name": "Replay verandert geen saldo, klok of levens",
+      "implementation": "implemented",
+      "verification": "replay"
+    },
+    {
+      "id": "original-frame-match",
+      "area": "reference",
+      "name": "Bronbeelden bekeken en naast spelbeelden vergeleken; geen pixelidentieke 3D-reconstructie",
+      "implementation": "partial",
+      "verification": "visual-checkpoints"
+    },
+    {
+      "id": "original-shop-match",
+      "area": "reference",
+      "name": "Volledige originele shop gereconstrueerd",
+      "implementation": "blocked",
+      "verification": "none"
+    },
+    {
+      "id": "video-upload-chunks",
+      "area": "storage",
+      "name": "Grote video in delen van 4 MiB versturen",
+      "implementation": "implemented",
+      "verification": "import-browser"
+    },
+    {
+      "id": "video-upload-integrity",
+      "area": "storage",
+      "name": "Checksums en volledige samenvoeging controleren",
+      "implementation": "implemented",
+      "verification": "unit"
+    },
+    {
+      "id": "video-upload-retry",
+      "area": "storage",
+      "name": "Een ontvangen deel veilig opnieuw versturen",
+      "implementation": "implemented",
+      "verification": "unit"
+    },
+    {
+      "id": "video-native-frames",
+      "area": "reference",
+      "name": "Native frames en echte timestamps uitpakken",
+      "implementation": "implemented",
+      "verification": "import-browser"
+    },
+    {
+      "id": "video-frame-steps",
+      "area": "reference",
+      "name": "Vorige/volgende, tijdlijn en meetmanifest",
+      "implementation": "implemented",
+      "verification": "import-browser"
+    },
+    {
+      "id": "video-index",
+      "area": "reference",
+      "name": "Geïmporteerde frames automatisch in SQLite registreren",
+      "implementation": "implemented",
+      "verification": "unit"
+    },
+    {
+      "id": "video-local-preview",
+      "area": "visual",
+      "name": "Originele video lokaal afspelen",
+      "implementation": "implemented",
+      "verification": "import-browser"
+    },
+    {
+      "id": "video-file-limit",
+      "area": "storage",
+      "name": "Bestandslimiet van 1 GiB handhaven",
+      "implementation": "implemented",
+      "verification": "unit"
+    },
+    {
+      "id": "video-import-origin",
+      "area": "storage",
+      "name": "Schrijfacties vanaf een andere oorsprong weigeren",
+      "implementation": "implemented",
+      "verification": "unit"
+    },
+    {
+      "id": "source-integrity",
+      "area": "reference",
+      "name": "Alle 13 ZIP-delen samengevoegd en SHA-256 geverifieerd",
+      "implementation": "implemented",
+      "verification": "source-data"
+    },
+    {
+      "id": "all-frame-index",
+      "area": "reference",
+      "name": "26.975 oorspronkelijke frames technisch geïndexeerd",
+      "implementation": "implemented",
+      "verification": "source-data"
+    },
+    {
+      "id": "eight-stages",
+      "area": "modes",
+      "name": "Acht visueel waargenomen stages met afstanden en muren",
+      "implementation": "implemented",
+      "verification": "reference-game-browser"
+    },
+    {
+      "id": "training-ranking",
+      "area": "modes",
+      "name": "Sterren, goldbeloning en volgende stage",
+      "implementation": "implemented",
+      "verification": "reference-game-browser"
+    },
+    {
+      "id": "reference-hud",
+      "area": "visual",
+      "name": "HUD met brongebonden uitsneden en touchbediening",
+      "implementation": "implemented",
+      "verification": "reference-game-browser"
+    },
+    {
+      "id": "assisted-cross",
+      "area": "controls",
+      "name": "Pas, timingactie, omhaal en Cross-bonus",
+      "implementation": "implemented",
+      "verification": "battle-scenes"
+    },
+    {
+      "id": "full-wardrobe",
+      "area": "shop",
+      "name": "Acht uitrustingscategorieën met 25 lokale keuzes",
+      "implementation": "implemented",
+      "verification": "battle-scenes"
+    },
+    {
+      "id": "shoe-stats",
+      "area": "shop",
+      "name": "Begrensde lokale krachtbonussen van schoenen",
+      "implementation": "implemented",
+      "verification": "battle-scenes"
+    },
+    {
+      "id": "free-gender",
+      "area": "shop",
+      "name": "Gratis geslachtskeuze zonder saldoverlies",
+      "implementation": "implemented",
+      "verification": "battle-scenes"
+    }
+  ],
+  "assets": [
+    {
+      "id": "stadium",
+      "kind": "procedural_geometry",
+      "origin": "own",
+      "path": "src/scene.js",
+      "visuallyMatched": false
+    },
+    {
+      "id": "characters",
+      "kind": "procedural_geometry",
+      "origin": "own",
+      "path": "src/scene.js",
+      "visuallyMatched": false
+    },
+    {
+      "id": "ball",
+      "kind": "procedural_geometry",
+      "origin": "own",
+      "path": "src/scene.js",
+      "visuallyMatched": false
+    },
+    {
+      "id": "interface",
+      "kind": "html_css",
+      "origin": "own",
+      "path": "src/style.css",
+      "visuallyMatched": false
+    },
+    {
+      "id": "audio",
+      "kind": "web_audio_synthesis",
+      "origin": "own",
+      "path": "src/main.js",
+      "visuallyMatched": false
+    },
+    {
+      "id": "original-screenshot",
+      "kind": "image_reference",
+      "origin": "external_unavailable",
+      "path": null,
+      "sourceId": "pg-screenshot",
+      "visuallyMatched": false
+    },
+    {
+      "id": "video-crop-title",
+      "kind": "reference_crop",
+      "origin": "user_supplied_video",
+      "path": "public/reference/title.jpg",
+      "sourceId": "received-training-video",
+      "visuallyMatched": true
+    },
+    {
+      "id": "video-crop-menu",
+      "kind": "reference_crop",
+      "origin": "user_supplied_video",
+      "path": "public/reference/menu.jpg",
+      "sourceId": "received-training-video",
+      "visuallyMatched": true
+    },
+    {
+      "id": "video-crop-best",
+      "kind": "reference_crop",
+      "origin": "user_supplied_video",
+      "path": "public/reference/best.png",
+      "sourceId": "received-training-video",
+      "visuallyMatched": true
+    },
+    {
+      "id": "video-crop-score",
+      "kind": "reference_crop",
+      "origin": "user_supplied_video",
+      "path": "public/reference/score.png",
+      "sourceId": "received-training-video",
+      "visuallyMatched": true
+    },
+    {
+      "id": "video-crop-life",
+      "kind": "reference_crop",
+      "origin": "user_supplied_video",
+      "path": "public/reference/life.png",
+      "sourceId": "received-training-video",
+      "visuallyMatched": true
+    },
+    {
+      "id": "video-crop-miss",
+      "kind": "reference_crop",
+      "origin": "user_supplied_video",
+      "path": "public/reference/miss.png",
+      "sourceId": "received-training-video",
+      "visuallyMatched": true
+    },
+    {
+      "id": "video-crop-pause",
+      "kind": "reference_crop",
+      "origin": "user_supplied_video",
+      "path": "public/reference/pause.png",
+      "sourceId": "received-training-video",
+      "visuallyMatched": true
+    },
+    {
+      "id": "video-crop-camera",
+      "kind": "reference_crop",
+      "origin": "user_supplied_video",
+      "path": "public/reference/camera.png",
+      "sourceId": "received-training-video",
+      "visuallyMatched": true
+    },
+    {
+      "id": "video-crop-spin",
+      "kind": "reference_crop",
+      "origin": "user_supplied_video",
+      "path": "public/reference/spin.png",
+      "sourceId": "received-training-video",
+      "visuallyMatched": true
+    },
+    {
+      "id": "video-crop-arrow",
+      "kind": "reference_crop",
+      "origin": "user_supplied_video",
+      "path": "public/reference/arrow.png",
+      "sourceId": "received-training-video",
+      "visuallyMatched": true
+    },
+    {
+      "id": "video-crop-crowd",
+      "kind": "reference_crop",
+      "origin": "user_supplied_video",
+      "path": "public/reference/crowd.jpg",
+      "sourceId": "received-training-video",
+      "visuallyMatched": true
+    },
+    {
+      "id": "video-crop-advert",
+      "kind": "reference_crop",
+      "origin": "user_supplied_video",
+      "path": "public/reference/advert.jpg",
+      "sourceId": "received-training-video",
+      "visuallyMatched": true
+    }
+  ]
+}

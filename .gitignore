@@ -1,0 +1,10 @@
+node_modules/
+dist/
+test-results/
+*.log
+research/imports/
+research/original/
+research/native/
+research/overview/stage-label-*.png
+research/motion/first-*.jpg
+artifacts/

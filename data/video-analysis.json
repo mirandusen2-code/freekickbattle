@@ -1,0 +1,288 @@
+{
+  "sourceId": "received-training-video",
+  "sourcePath": "research/original/training.mp4",
+  "integrity": {
+    "parts": 13,
+    "sizeBytes": 307773232,
+    "sha256": "68a71a62c5c6f89599ba688b8dfc0737f90a7a065d228daf9490876f04cd173d",
+    "matchesUserManifest": true
+  },
+  "metadata": {
+    "width": 1920,
+    "height": 1080,
+    "durationSeconds": 900.167982,
+    "videoFrames": 26975,
+    "videoFPSNumerator": 30000,
+    "videoFPSDenominator": 1001,
+    "videoFPS": 29.97002997002997,
+    "originalInternalGameFPS": null,
+    "lastFramePTS": 900.032467,
+    "videoCodec": "h264",
+    "audioCodec": "aac",
+    "gameViewport": [
+      236,
+      114,
+      1448,
+      856
+    ]
+  },
+  "technicalAnalysis": {
+    "allFramesDecoded": true,
+    "frameIndex": "data/frame-index.json",
+    "imageProcessing": "1448x856 game crop scaled to 160x94 greyscale; average absolute difference and 80-bit SHA-256 prefix per decoded image",
+    "fullVideoSHA256IsAuthoritative": true,
+    "cutCandidatesAbove18": 727,
+    "cutCandidatesAreNotConfirmedSceneCuts": true
+  },
+  "visualReview": {
+    "everyFrameManuallyReviewed": false,
+    "method": "Whole-timeline contact sheets at 15-second intervals; opening at 2 fps; stage-1 dense samples; first shot at 10 fps; 36 consecutive native contact frames; native detail and stage screenshots; additional one-second Stage 6 pass/timing/bicycle sequence from 611 to 630 seconds.",
+    "wholeTimelineSampleCount": 61,
+    "denseNativeContactFrames": 36,
+    "nativeContactRange": [
+      1043,
+      1078
+    ],
+    "stageLabelsOCR": "research/stage-label-ocr.json",
+    "checkpoints": 19
+  },
+  "observations": [
+    {
+      "id": "title",
+      "approxSeconds": 20,
+      "area": "menu",
+      "statement": "Geel Free Kick Battle-titelscherm met START.",
+      "status": "visually_verified",
+      "image": "/analysis/title.jpg"
+    },
+    {
+      "id": "main-menu",
+      "approxSeconds": 25,
+      "area": "menu",
+      "statement": "Tabs PLAY, SHOP, PROFILE, OPTION; MATCH PLAY, ARCADE, TRAINING, CREDIT; onderaan gold, premium, level en energie.",
+      "status": "visually_verified",
+      "image": "/analysis/main-menu.jpg"
+    },
+    {
+      "id": "training-hud",
+      "approxSeconds": 30,
+      "area": "controls",
+      "statement": "BEST/SCORE, drie voetballen, pauze en camera, groene pijlen, afstand 21m, grote SPIN-bal en schuine krachtmeter.",
+      "status": "visually_verified",
+      "image": "/analysis/training-hud.jpg"
+    },
+    {
+      "id": "first-goal",
+      "approxSeconds": 38,
+      "area": "scoring",
+      "statement": "Eerste doelpunt: Technique +100; score 100 en drie ongebruikte levens.",
+      "status": "visually_verified",
+      "image": "/analysis/first-goal.jpg"
+    },
+    {
+      "id": "first-miss",
+      "approxSeconds": 50,
+      "area": "rules",
+      "statement": "Na de eerste misser heeft Training een rood kruis en twee ongebruikte voetballen.",
+      "status": "visually_verified",
+      "image": "/analysis/first-miss.jpg"
+    },
+    {
+      "id": "second-goal",
+      "approxSeconds": 56,
+      "area": "scoring",
+      "statement": "Score 400 na bonussen; slechts één leven gebruikt.",
+      "status": "visually_verified",
+      "image": "/analysis/second-goal.jpg"
+    },
+    {
+      "id": "second-miss",
+      "approxSeconds": 74,
+      "area": "rules",
+      "statement": "Twee rode kruisen; de ronde blijft speelbaar.",
+      "status": "visually_verified",
+      "image": "/analysis/second-miss.jpg"
+    },
+    {
+      "id": "third-goal",
+      "approxSeconds": 80,
+      "area": "scoring",
+      "statement": "Technique +100 en No Bounce +100 worden afgebeeld; twee kruisen blijven staan.",
+      "status": "visually_verified",
+      "image": "/analysis/third-goal.jpg"
+    },
+    {
+      "id": "ranking-600",
+      "approxSeconds": 89,
+      "area": "ranking",
+      "statement": "TRAINING RANKING met score 600, één ster en uiteindelijk 50 gold; NEXT LEVEL, RETRY, MENU.",
+      "status": "visually_verified",
+      "image": "/analysis/ranking-600.jpg"
+    },
+    {
+      "id": "stage2",
+      "approxSeconds": 134,
+      "area": "stages",
+      "statement": "Stage 2: 21m, keeper en geen verdedigingsmuur; schuine veldoriëntatie. BEST begint op 0: de trainingsbestscore hoort bij de stage.",
+      "status": "visually_verified",
+      "image": "/analysis/stage2.jpg"
+    },
+    {
+      "id": "stage3",
+      "approxSeconds": 197,
+      "area": "stages",
+      "statement": "Stage 3: 27m, muur van twee verdedigers.",
+      "status": "visually_verified",
+      "image": "/analysis/stage3.jpg"
+    },
+    {
+      "id": "stage4",
+      "approxSeconds": 265,
+      "area": "stages",
+      "statement": "Stage 4: 27m, muur van twee verdedigers en gewijzigde veldoriëntatie.",
+      "status": "visually_verified",
+      "image": "/analysis/stage4.jpg"
+    },
+    {
+      "id": "stage5",
+      "approxSeconds": 421,
+      "area": "stages",
+      "statement": "Stage 5: 42m, twee verdedigers.",
+      "status": "visually_verified",
+      "image": "/analysis/stage5.jpg"
+    },
+    {
+      "id": "stage6",
+      "approxSeconds": 611,
+      "area": "stages",
+      "statement": "Stage 6: 42m, twee verdedigers, CHANCE / POWER SHOT en PASS in beeld.",
+      "status": "visually_verified",
+      "image": "/analysis/stage6.jpg"
+    },
+    {
+      "id": "stage7",
+      "approxSeconds": 780,
+      "area": "stages",
+      "statement": "Stage 7: 37m, drie verdedigers en CHANCE / POWER SHOT.",
+      "status": "visually_verified",
+      "image": "/analysis/stage7.jpg"
+    },
+    {
+      "id": "stage8",
+      "approxSeconds": 871,
+      "area": "stages",
+      "statement": "Stage 8: 32m en vier verdedigers.",
+      "status": "visually_verified",
+      "image": "/analysis/stage8.jpg"
+    },
+    {
+      "id": "pass-option",
+      "approxSeconds": 611,
+      "area": "passing",
+      "statement": "Stage 6 toont een medespeler met PASS-ballon en CHANCE / POWER SHOT.",
+      "status": "visually_verified",
+      "image": "/analysis/pass-option.jpg"
+    },
+    {
+      "id": "pass-timing",
+      "approxSeconds": 619,
+      "area": "passing",
+      "statement": "Na de pas verschijnt een timingcirkel rond de bal bij de ontvanger.",
+      "status": "visually_verified",
+      "image": "/analysis/pass-timing.jpg"
+    },
+    {
+      "id": "bicycle-cross",
+      "approxSeconds": 622,
+      "area": "passing",
+      "statement": "Een PERFECT-timingreactie gaat over in een omhaal; de volgende goal levert Technique +100 en Cross +100 op.",
+      "status": "visually_verified",
+      "image": "/analysis/bicycle-cross.jpg"
+    }
+  ],
+  "timingMeasurements": [
+    {
+      "id": "first-contact",
+      "sourceFrameRange": [
+        1058,
+        1061
+      ],
+      "approxSecondsRange": [
+        35.301933,
+        35.402033
+      ],
+      "meaning": "Visueel interval rond het eerste balcontact; onzekerheid circa 0,10s."
+    },
+    {
+      "id": "first-goal-feedback",
+      "approxSeconds": 36.3,
+      "meaning": "Begin van doelpuntfeedback, circa 0,9–1,0s na eerste contact. Niet bewezen voor elk schot."
+    }
+  ],
+  "stages": [
+    {
+      "id": 1,
+      "distance": 21,
+      "wall": 0,
+      "referenceSeconds": 30,
+      "status": "visually_verified"
+    },
+    {
+      "id": 2,
+      "distance": 21,
+      "wall": 0,
+      "referenceSeconds": 134,
+      "status": "visually_verified"
+    },
+    {
+      "id": 3,
+      "distance": 27,
+      "wall": 2,
+      "referenceSeconds": 197,
+      "status": "visually_verified"
+    },
+    {
+      "id": 4,
+      "distance": 27,
+      "wall": 2,
+      "referenceSeconds": 265,
+      "status": "visually_verified"
+    },
+    {
+      "id": 5,
+      "distance": 42,
+      "wall": 2,
+      "referenceSeconds": 421,
+      "status": "visually_verified"
+    },
+    {
+      "id": 6,
+      "distance": 42,
+      "wall": 2,
+      "referenceSeconds": 611,
+      "status": "visually_verified"
+    },
+    {
+      "id": 7,
+      "distance": 37,
+      "wall": 3,
+      "referenceSeconds": 780,
+      "status": "visually_verified"
+    },
+    {
+      "id": 8,
+      "distance": 32,
+      "wall": 4,
+      "referenceSeconds": 871,
+      "status": "visually_verified"
+    }
+  ],
+  "unresolved": [
+    "De video opent de SHOP niet; volledige catalogus, prijzen, itemstatistieken en alle ontwerpen zijn niet geverifieerd.",
+    "De bron bevat videoframes, geen originele 3D-bestanden, rig, textures, broncode of interne physicsparameters.",
+    "De interne gameframerate kan niet uit de 29,97 fps-opname worden vastgesteld.",
+    "Driesterrendrempel 1500, tweesterrendrempel 800, periodieke chance-shots en variatie van één meter zijn lokale keuzes.",
+    "Aanloop 0,7s en resultaat 4,2s zijn reconstructietimings; inputmomenten en SKIP maken exacte oorspronkelijke duur onzeker.",
+    "Arcade en lokale AI Match zijn aanvullende implementaties; de opname toont Training. Online PvP ontbreekt."
+  ]
+}

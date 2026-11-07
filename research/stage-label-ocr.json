@@ -1,0 +1,77 @@
+[
+  {
+    "approxSeconds": 133,
+    "stage": 2,
+    "ocr": "Stage 2"
+  },
+  {
+    "approxSeconds": 134,
+    "stage": 2,
+    "ocr": "Stage 2"
+  },
+  {
+    "approxSeconds": 196,
+    "stage": 3,
+    "ocr": "Stage 3"
+  },
+  {
+    "approxSeconds": 197,
+    "stage": 3,
+    "ocr": "Stage 3"
+  },
+  {
+    "approxSeconds": 264,
+    "stage": 4,
+    "ocr": "Stage 4"
+  },
+  {
+    "approxSeconds": 265,
+    "stage": 4,
+    "ocr": "Stage 4"
+  },
+  {
+    "approxSeconds": 366,
+    "stage": 4,
+    "ocr": "Stage 4"
+  },
+  {
+    "approxSeconds": 367,
+    "stage": 4,
+    "ocr": "Stage 4"
+  },
+  {
+    "approxSeconds": 421,
+    "stage": 5,
+    "ocr": "Stage 5"
+  },
+  {
+    "approxSeconds": 516,
+    "stage": 5,
+    "ocr": "Stage 5"
+  },
+  {
+    "approxSeconds": 517,
+    "stage": 5,
+    "ocr": "Stage 5"
+  },
+  {
+    "approxSeconds": 611,
+    "stage": 6,
+    "ocr": "Stage 6"
+  },
+  {
+    "approxSeconds": 695,
+    "stage": 6,
+    "ocr": "Stage 6"
+  },
+  {
+    "approxSeconds": 780,
+    "stage": 7,
+    "ocr": "Stage 7"
+  },
+  {
+    "approxSeconds": 871,
+    "stage": 8,
+    "ocr": "Stage 8"
+  }
+]

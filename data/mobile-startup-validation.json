@@ -1,17 +1,24 @@
 {
-  "release": "freekick-f71c3cbdeefb904f",
+  "release": "freekick-8f476884c677b108",
   "reportedIssue": "Blank or black screen in Safari on an iPhone; exact device-side cause not yet confirmed.",
   "changes": [
     "Classic ES2018 game script instead of inline ES module",
     "Visible startup, parse-error and timeout feedback with retry",
     "Viewport and layout fallbacks for older Safari",
-    "Cache writes cannot block a successful navigation response"
+    "Cache writes cannot block a successful navigation response",
+    "Normalize complete relative asset paths before embedding images",
+    "Do not hide the loading screen until the title image is decoded",
+    "White recovery page clears only game caches and retains saved progress"
   ],
   "localChecks": {
     "startupErrorAndMissingCode": "passed",
     "phoneTouchOnlineOffline": "passed",
-    "standaloneGame": "passed"
+    "standaloneGame": "passed",
+    "titleAndMenuImagesDecode": "passed",
+    "cacheRecoveryPreservesProgress": "passed"
   },
-  "safariEngineCheck": "queued after push",
-  "recordedAt": "2026-11-07T19:10:14.951245+00:00"
+  "safariEngineCheck": "queued for corrected image URLs",
+  "recordedAt": "2026-11-07T19:27:13.049437+00:00",
+  "confirmedPackagingBug": "Relative CSS asset URLs such as ../reference/title.jpg were partially replaced, producing invalid ..data:image URLs. The title/START artwork was invisible.",
+  "evidenceRun": "https://github.com/mirandusen2-code/freekickbattle/actions/runs/42405591722"
 }

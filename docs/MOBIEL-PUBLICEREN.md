@@ -24,3 +24,5 @@ Voor ontwikkelaars: na wijzigingen genereert `python scripts/build-mobile-site.p
 ## Opstartcontrole
 
 Na een melding van een zwart scherm op iPhone/Safari is de spelverpakking omgezet naar een klassiek ES2018-script. Een zelfstandige laadstatus en foutmelding blijven zichtbaar als de spelcode niet start. Oudere Safari-versies krijgen ook alternatieven voor nieuwere CSS-eenheden en verhoudingen. De browserworkflow controleert Chromium en WebKit, zowel lokaal als op de gepubliceerde website. Een cacheprobleem mag een geslaagde netwerkreactie niet blokkeren.
+
+De Safari-controle vond vervolgens de concrete verpakkingsfout: relatieve CSS-afbeeldingspaden werden gedeeltelijk vervangen, waardoor ongeldige `..data:image`-adressen ontstonden. Dat is hersteld. De controle decodeert nu ook daadwerkelijk de titel- en menuafbeeldingen. De laadstatus verdwijnt pas nadat het titelbeeld is geladen. `open.html` kan een oude spelcache vernieuwen zonder voortgang te wissen.

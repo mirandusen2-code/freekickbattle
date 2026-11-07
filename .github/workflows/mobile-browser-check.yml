@@ -8,6 +8,9 @@ on:
       - 'tests/mobile-site-browser.mjs'
       - 'tests/wait-for-mobile-release.mjs'
       - '.github/workflows/mobile-browser-check.yml'
+concurrency:
+  group: phone-startup-${{ github.ref }}
+  cancel-in-progress: true
 permissions:
   contents: read
 jobs:

@@ -2,16 +2,23 @@
   "url": "https://mirandusen2-code.github.io/freekickbattle/",
   "repository": "mirandusen2-code/freekickbattle",
   "branch": "gh-pages",
-  "websiteCommit": "78d03da076a4c15c39ba9513ca8ee1571b2e09e5",
-  "sourceCommit": "41557f55f718152b00187d1284f2099a6c228e51",
-  "deploymentRun": "https://github.com/mirandusen2-code/freekickbattle/actions/runs/42400418130",
+  "websiteCommit": "26b3882580fda804a4541efda2d271b1780c9ad1",
+  "sourceCommit": "c14a5347b9630306e65d1c9c8fae71388e4dc4a9",
+  "deploymentRun": "https://github.com/mirandusen2-code/freekickbattle/actions/runs/42406283170",
   "status": "success",
   "verification": {
     "githubRunStatus": "Success",
     "githubPublishedURLConfirmed": true,
     "publicBranchZipChecksumMatchesLocalSite": true,
     "localPhoneTouchOnlineOfflineTests": "passed",
-    "liveURLFetchFromCloud": "blocked by outbound CONNECT policy (403); no claim of a successful direct HTTP check"
+    "liveURLFetchFromCloud": "blocked by outbound CONNECT policy (403); no claim of a successful direct HTTP check",
+    "liveBrowserChecksViaGitHubActions": {
+      "chromium": "passed",
+      "webkit": "passed"
+    }
   },
-  "recordedAt": "2026-11-07T18:19:30.249842+00:00"
+  "recordedAt": "2026-11-07T19:33:39.224152+00:00",
+  "browserRun": "https://github.com/mirandusen2-code/freekickbattle/actions/runs/42406284674",
+  "release": "freekick-8f476884c677b108",
+  "recoveryURL": "https://mirandusen2-code.github.io/freekickbattle/open.html?v=3"
 }

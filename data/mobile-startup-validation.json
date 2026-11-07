@@ -17,8 +17,19 @@
     "titleAndMenuImagesDecode": "passed",
     "cacheRecoveryPreservesProgress": "passed"
   },
-  "safariEngineCheck": "queued for corrected image URLs",
-  "recordedAt": "2026-11-07T19:27:13.049437+00:00",
+  "safariEngineCheck": "passed",
+  "recordedAt": "2026-11-07T19:33:39.223839+00:00",
   "confirmedPackagingBug": "Relative CSS asset URLs such as ../reference/title.jpg were partially replaced, producing invalid ..data:image URLs. The title/START artwork was invisible.",
-  "evidenceRun": "https://github.com/mirandusen2-code/freekickbattle/actions/runs/42405591722"
+  "evidenceRun": "https://github.com/mirandusen2-code/freekickbattle/actions/runs/42405591722",
+  "browserRun": "https://github.com/mirandusen2-code/freekickbattle/actions/runs/42406284674",
+  "browserCoverage": [
+    "Chromium local and published site",
+    "WebKit/Safari engine local and published site",
+    "Decoded title and menu artwork",
+    "Real touch shooting",
+    "Offline reload and shooting",
+    "Portrait and landscape",
+    "Recovery page preserves saved progress"
+  ],
+  "deviceConfirmation": "Awaiting user confirmation on their iPhone"
 }
